@@ -4,6 +4,7 @@ import { withRouter } from "next/router";
 import Main_Head from "../components/Main_Head.js";
 import Main_Nav from "../components/Main_Nav.js";
 import Main_Footer from "../components/Main_Footer.js";
+import loading_bar from '../components/small_components/loading_bar.js'
 
 import { Fragment } from "react";
 class Layout extends React.Component {
