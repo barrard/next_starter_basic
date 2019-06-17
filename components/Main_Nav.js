@@ -1,8 +1,9 @@
 import React from "react";
-import { connect } from "react-redux";
+// import { connect } from "react-redux";
 import { withRouter } from "next/router";
 
 import Link from "next/link";
+
 class Main_Nav extends React.Component {
   constructor(props) {
     super(props);
@@ -18,7 +19,7 @@ class Main_Nav extends React.Component {
       <nav>
         <ul>
         <li>
-            <Link prefetch href="/landing" as="/">
+            <Link prefetch href="/" as="/">
               <a
                 className={`${
                   pathname == "/" ? "active " : " "
@@ -29,10 +30,10 @@ class Main_Nav extends React.Component {
             </Link>
           </li>
           <li>
-            <Link prefetch href="/about" as="/">
+            <Link prefetch href="/about" as="/about">
               <a
                 className={`${
-                  pathname == "/About" ? "active " : " "
+                  pathname == "/about" ? "active " : " "
                 }" nav-link dropdown-item"`}
               >
                 About
@@ -40,18 +41,18 @@ class Main_Nav extends React.Component {
             </Link>
           </li>
           <li>
-            <Link prefetch href="/work-examples" as="/">
+            <Link prefetch href="/work-examples" as="/work-examples">
               <a
                 className={`${
                   pathname == "/work-examples" ? "active " : " "
                 }" nav-link dropdown-item"`}
               >
-                HomeWork Examples
+                Work Examples
               </a>
             </Link>
           </li>
           <li>
-            <Link prefetch href="/future-projects" as="/">
+            <Link prefetch href="/future-projects" as="/future-projects">
               <a
                 className={`${
                   pathname == "/future-projects" ? "active " : " "
@@ -62,7 +63,7 @@ class Main_Nav extends React.Component {
             </Link>
           </li>
           <li>
-            <Link prefetch href="/blog" as="/">
+            <Link prefetch href="/blog" as="/blog">
               <a
                 className={`${
                   pathname == "/blog" ? "active " : " "
@@ -73,7 +74,7 @@ class Main_Nav extends React.Component {
             </Link>
           </li>
           <li>
-            <Link prefetch href="/contact" as="/">
+            <Link prefetch href="/contact" as="/contact">
               <a
                 className={`${
                   pathname == "/contact" ? "active " : " "
