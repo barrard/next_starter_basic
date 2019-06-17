@@ -5,7 +5,7 @@ import { withRouter } from 'next/router';
 
 import Main_Layout from '../layouts/Main_Layout.js';
 
-class Future_Projects extends React.Component{
+class Contact extends React.Component{
   constructor(props) {
     super(props);
     this.state={}
@@ -13,7 +13,7 @@ class Future_Projects extends React.Component{
   render(){
     return(
       <Main_Layout>
-      Future_Projects
+      Contact
       </Main_Layout>
     )
   }
@@ -26,4 +26,4 @@ class Future_Projects extends React.Component{
 // }
 
 
-export default withRouter(Future_Projects);
+export default withRouter(Contact);
